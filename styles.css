@@ -1,0 +1,37 @@
+
+body{
+    width: 100%;
+    padding: 10%;
+}
+
+
+.table-responsive {
+    overflow-x: auto; 
+}
+
+th {
+    background-color: #396137; 
+    color: rgb(32, 30, 36);
+    border: 1px solid;
+}
+td{
+    border: 1px solid;
+}
+.progress {
+    height: 30px;
+    background-color: #e9ecef; 
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.progress-bar {
+    background-color: #1d74d2;
+    transition: width 0.5s ease;
+    height: 100%;
+    opacity: 1;
+}
+.alinhamento{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
