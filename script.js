@@ -177,10 +177,16 @@ function enviarDados(data){
             alert(xhr.responseText)
             cancelar()
         } else {
+            alert('Erro ao fazer a requisição: ' + xhr.status)
             console.error('Erro ao fazer a requisição: ' + xhr.status);
+            cancelar()
         }
     };
     xhr.open('POST', 'http://localhost:8080/importador', true);
+    xhr.onerror = function() {
+        alert('Erro ao fazer a requisição: verifique se o servidor está online e operante ')
+        cancelar()
+    };
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(data);
 }
